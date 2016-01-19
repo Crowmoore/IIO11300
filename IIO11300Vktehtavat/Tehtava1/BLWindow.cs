@@ -11,9 +11,13 @@ namespace Tehtava1
         /// <summary>
         /// CalculatePerimeter calculates the perimeter of a window
         /// </summary>
-        public static double CalculatePerimeter(double widht, double height)
+        public static double CalculatePerimeter(double width, double height)
         {
-            throw new System.NotImplementedException();
+            return (2 * width + 2 * height);
+        }
+        public static double CalculateArea(double width, double height)
+        {
+            return width * height;
         }
     }
 }

@@ -33,12 +33,23 @@ namespace Tehtava1
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            //TODO
+            double windowWidth = double.Parse(txtWidht.Text);
+            double windowHeight = double.Parse(txtHeight.Text);
+            double windowBorder = double.Parse(txtBorder.Text);
             try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
-                //ei näin: BusinessLogicWindow.CalculatePerimeter(1, 1);
+                myRectangle.Width = windowWidth;
+                myRectangle.Height = windowHeight;
+                myRectangle.StrokeThickness = windowBorder;
+                double area;
+                area = BusinessLogicWindow.CalculateArea(windowWidth, windowHeight);
+                txtArea.Text = area.ToString();
+
+                double perimeter;
+                perimeter = BusinessLogicWindow.CalculatePerimeter(windowWidth, windowHeight);
+                txtBorderPerimeter.Text = perimeter.ToString();
+
+                txtBorderArea.Text = (perimeter * windowBorder).ToString();
             }
             catch (Exception ex)
             {
@@ -46,7 +57,7 @@ namespace Tehtava1
             }
             finally
             {
-                //yield to an user that everything okay
+                //MessageBox.Show("Ikkunan koko laskettu");
             }
         }
 
