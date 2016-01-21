@@ -1,10 +1,4 @@
-﻿/*
-* Copyright (C) JAMK/IT/Esa Salmikangas
-* This file is part of the IIO11300 course project.
-* Created: 12.1.2016 Modified: 13.1.2016
-* Authors: Olli Opilas ,Esa Salmikangas
-*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using JAMK.IT.IIO11300;
 
-namespace Tehtava1
+namespace JAMK.IT.IIO11300
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml
@@ -33,23 +28,22 @@ namespace Tehtava1
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            double windowWidth = double.Parse(txtWidht.Text);
+            double windowWidth = double.Parse(txtWidth.Text);
             double windowHeight = double.Parse(txtHeight.Text);
             double windowBorder = double.Parse(txtBorder.Text);
             try
             {
-                myRectangle.Width = windowWidth;
-                myRectangle.Height = windowHeight;
-                myRectangle.StrokeThickness = windowBorder;
                 double area;
                 area = BusinessLogicWindow.CalculateArea(windowWidth, windowHeight);
-                txtArea.Text = area.ToString();
+                txtArea.Text = area.ToString("0.##") + " m^2";
 
                 double perimeter;
                 perimeter = BusinessLogicWindow.CalculatePerimeter(windowWidth, windowHeight);
-                txtBorderPerimeter.Text = perimeter.ToString();
+                txtBorderPerimeter.Text = perimeter.ToString("0.##") + " m";
 
-                txtBorderArea.Text = (perimeter * windowBorder).ToString();
+                double borderArea;
+                borderArea = BusinessLogicWindow.CalculateBorderArea(windowWidth, windowHeight, windowBorder);
+                txtBorderArea.Text = borderArea.ToString("0.##") + " m^2";
             }
             catch (Exception ex)
             {
@@ -66,7 +60,19 @@ namespace Tehtava1
       //käynnissä olevan sovelluksen sulkeminen
       Application.Current.Shutdown();
     }
-  }
+
+    private void btnOO_Click(object sender, RoutedEventArgs e)
+    {
+            //olion avulla lasketaan pinta-ala, piiri ja hinta
+            MyWindow window = new MyWindow();
+            window.Width = double.Parse(txtWidth.Text);
+            window.Height = double.Parse(txtHeight.Text);
+            //pinta-alan laskeminen kutsumalla metodia
+            txtArea.Text = window.CalculateArea().ToString();
+            //pinta-ala on olion ominaisuus
+            txtArea.Text = window.Area.ToString();
+    }
+}
 
 
 }
