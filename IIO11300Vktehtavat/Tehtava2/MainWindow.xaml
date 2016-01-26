@@ -1,0 +1,32 @@
+﻿<Window x:Class="JAMK.IT.IIO11300.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JAMK.IT.IIO11300"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="250">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="tbGame" Text="Choose your game" Height="28" Margin="10,10,10,0" />
+                <ComboBox x:Name="cbGame" Width="100" Height="23" Margin="10,10,10,10">
+                    <ComboBoxItem IsSelected="True">Lotto</ComboBoxItem>
+                    <ComboBoxItem>Viking Lotto</ComboBoxItem>
+                    <ComboBoxItem>EuroJackpot</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="tbDraws" Text="Number of draws" Height="28" Margin="10,10,10,0" />
+                <TextBox x:Name="txtDraws" Text="1" Height="28" Width="30" Margin="19,10,10,0" />        
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnDraw" Content="Draw" Height="32" Width="100" Click="btnDraw_Click" Margin="10,10,10,0" />
+                <Button x:Name="btnClear" Content="Clear" Height="32" Width="100" Click="btnClear_Click" Margin="10,10,10,0" />
+            </StackPanel>
+            <TextBlock x:Name="tbNumbers" Text="Randomly drawn numbers:" Height="28" Margin="10,10,10,0" />
+            <RichTextBox x:Name="txtNumbers" Height="150" Width="220" Margin="10,0,10,0" />
+            <Button x:Name="btnClose" Content="Close" Height="32" Width="100" Click="btnClose_Click" Margin="120,10,0,10" />
+        </StackPanel>
+    </Grid>
+</Window>
