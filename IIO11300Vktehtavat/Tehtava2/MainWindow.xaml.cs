@@ -51,7 +51,6 @@ namespace JAMK.IT.IIO11300
         {
             for (int i = 0; i < lotto.TotalDraws; i++)
             {
-                System.Threading.Thread.Sleep(50);
                 int[] numbers = lotto.GetPrimaryNumbers();
                 int[] specials = lotto.GetSpecialNumbers(numbers);
                 printResults(lotto, numbers, specials);

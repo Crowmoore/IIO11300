@@ -101,7 +101,7 @@ namespace JAMK.IT.IIO11300
         {
             if (selectedGame != "Viking Lotto")
             {
-                Random random = new Random();
+                Random random = new Random((int)DateTime.Now.Ticks);
                 int[] numbers = new int[totalSpecialNumbers];
                 int number;
                 for (int i = 0; i < totalSpecialNumbers; i++)
