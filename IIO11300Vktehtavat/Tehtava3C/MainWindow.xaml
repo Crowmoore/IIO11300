@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tehtava3C.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava3C"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="430" Width="350">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="tbFolder" Text="Folder" Width="50" Margin="10"></TextBlock>
+            <TextBox x:Name="txtFolder" Text="" Width="200" Margin="10"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnGetFiles" Content="Load files" Width="100" Height="30" Margin="120, 10, 10, 10" Click="btnGetFiles_Click"></Button>
+        </StackPanel>
+        
+        <TextBlock x:Name="tbFoundFiles" Text="Found files:" Margin="45, 10, 10, 0"></TextBlock>
+        <ListBox x:Name="lbFiles" Width="250" Height="150" Margin="10, 0, 10, 10"></ListBox>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="tbResultFile" Text="Results file" Margin="10"></TextBlock>
+            <TextBox x:Name="txtResultFile" Text="" Width="200" Margin="10"></TextBox>
+        </StackPanel>
+        <Button x:Name="btnCombine" Content="Combine files" Width="100" Height="30" Margin="10" Click="btnCombine_Click"></Button>
+        <TextBlock x:Name="tbNotification" Text="" Width="320" Margin="10"></TextBlock>
+    </StackPanel>
+</Window>
