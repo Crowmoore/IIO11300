@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace H3MittausData.Properties
+namespace JAMK.IT.IIO11300.Properties
 {
 
 

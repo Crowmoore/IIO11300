@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace H3MittausData
+namespace JAMK.IT.IIO11300
 {
   /// <summary>
   /// Interaction logic for App.xaml

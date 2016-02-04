@@ -1,11 +1,11 @@
-﻿<Window x:Class="H3MittausData.MainWindow"
+﻿<Window x:Class="JAMK.IT.IIO11300.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:H3MittausData"
+        xmlns:local="clr-namespace:JAMK.IT.IIO11300"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" FontSize="18">
+        Title="MainWindow" Height="400" Width="900" FontSize="18">
     <Grid>
         <TabControl x:Name="tabControl" 
                     HorizontalAlignment="Stretch" 
@@ -15,16 +15,25 @@
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Tänään on:"/>
-                            <TextBlock x:Name="txtToday"/>
-                            <TextBlock Text="Tiedostonimi:" Margin="10,0,0,0"/>
-                            <TextBox x:Name="txtFileName" Text="d:\temp\testi.txt"/>
+                            <TextBlock x:Name="txtToday" Margin="5, 0, 10, 0"/>
+                            <TextBlock Text="Tiedostonimi:" Margin="10,0,10,0"/>
+                            <TextBox x:Name="txtFileName" Text="d:\H3090\testi.dat"/>
+                            
+                            <Button x:Name="btnSave" Content="Tallenna" Margin="10,0,0,0" Click="btnSave_Click"/>
+                            <Button x:Name="btnRead" Content="Hae tiedot" Margin="10,0,0,0" Click="btnRead_Click"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="klo:" />
-                            <TextBox x:Name="txtClock" Width="60"/>
-                            <TextBlock Text="mittaustulos:" />
-                            <TextBox x:Name="txtData" Width="60"/>
-                            <Button x:Name="btnSaveData" Content="New data" Margin="10,0,0,0" Click="btnSaveData_Click"/>
+                            <TextBlock Text="klo: " Margin="0, 0, 10, 0"/>
+                            <TextBox x:Name="txtClock" Width="60" Margin="0, 0, 10, 0"/>
+                            <TextBlock Text="mittaustulos:" Margin="0, 0, 10, 0" />
+                            <TextBox x:Name="txtData" Width="60" Margin="0, 0, 10, 0"/>
+                            <Button x:Name="btnAddData" Content="Lisää" Margin="10,0,0,0" Click="btnAddData_Click"/>
+                            <TextBlock Text="XML"></TextBlock>
+                            <Button x:Name="btnSerialize" Content="Serialisoi" Margin="10,0,0,0" Click="btnSerialize_Click"/>
+                            <Button x:Name="btnDeserialize" Content="Deserialisoi" Margin="10,0,0,0" Click="btnDeserialize_Click"/>
+                            <TextBlock Text="Binääri"></TextBlock>
+                            <Button x:Name="btnSerializeBin" Content="Serialisoi" Margin="10,0,0,0" Click="btnSerializeBin_Click"/>
+                            <Button x:Name="btnDeserializeBin" Content="Deserialisoi" Margin="10,0,0,0" Click="btnDeserializeBin_Click"/>
                         </StackPanel>
                         <StackPanel>
                             <ListBox Name="lbData" />

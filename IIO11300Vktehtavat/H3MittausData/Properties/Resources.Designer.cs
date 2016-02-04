@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace H3MittausData.Properties
+namespace JAMK.IT.IIO11300.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace H3MittausData.Properties
       {
         if ((resourceMan == null))
         {
-          global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("H3MittausData.Properties.Resources", typeof(Resources).Assembly);
+          global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JAMK.IT.IIO11300.Properties.Resources", typeof(Resources).Assembly);
           resourceMan = temp;
         }
         return resourceMan;
