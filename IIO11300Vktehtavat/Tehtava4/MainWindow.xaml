@@ -5,27 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <StackPanel Orientation="Horizontal">
-        <StackPanel Orientation="Vertical">
-            <TextBlock x:Name="tbEtunimi" Text="Etunimi" Margin="10, 10, 10, 10"></TextBlock>
-            <TextBlock x:Name="tbSukunimi" Text="Sukunimi" Margin="10, 10, 10, 10"></TextBlock>
-            <TextBlock x:Name="tbHinta" Text="Siirtohinta" Margin="10, 10, 10, 10"></TextBlock>
-            <TextBlock x:Name="tbSeura" Text="Seura" Margin="10, 10, 10, 10"></TextBlock>
-        </StackPanel>
-        <StackPanel Orientation="Vertical">
-            <TextBox x:Name="txtEtunimi" Text="" Width="100" Margin="10, 10, 10, 10"></TextBox>
-            <TextBox x:Name="txtSukunimi" Text="" Width="100" Margin="10, 10, 10, 10"></TextBox>
-            <TextBox x:Name="txtHinta" Text="" Width="100" Margin="10, 10, 10, 10"></TextBox>
-            <ComboBox x:Name="cbSeura" Width="100" Height="20"  Margin="10, 10, 10, 10"></ComboBox>
-        </StackPanel>
-        <StackPanel Orientation="Vertical">
-            <Button x:Name="btnUusi" Content="Lisää uusi" Margin="10, 10, 10, 10" Click="btnUusi_Click"></Button>
-            <Button x:Name="btnTallenna" Content="Tallenna pelaaja" Margin="10, 10, 10, 10" Click="btnTallenna_Click"></Button>
-            <Button x:Name="btnPoista" Content="Poista pelaaja" Margin="10, 10, 10, 10" Click="btnPoista_Click"></Button>
-            <Button x:Name="btnKirjoita" Content="Kirjoita pelaajat" Margin="10, 10, 10, 10" Click="btnKirjoita_Click"></Button>
-        </StackPanel>
+        Title="MainWindow" Height="275" Width="525">
+    <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="tbEtunimi" Text="Etunimi" Margin="10, 10, 10, 10"></TextBlock>
+                <TextBlock x:Name="tbSukunimi" Text="Sukunimi" Margin="10, 10, 10, 10"></TextBlock>
+                <TextBlock x:Name="tbHinta" Text="Siirtohinta" Margin="10, 10, 10, 10"></TextBlock>
+                <TextBlock x:Name="tbSeura" Text="Seura" Margin="10, 10, 10, 10"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBox x:Name="txtEtunimi" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
+                <TextBox x:Name="txtSukunimi" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
+                <TextBox x:Name="txtHinta" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
+                <ComboBox x:Name="cbSeura" Width="100" Height="20"  Margin="10, 5, 10, 10"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnUusi" Content="Lisää uusi" Margin="10, 5, 10, 10" Click="btnUusi_Click"></Button>
+                <Button x:Name="btnTallenna" Content="Tallenna pelaaja" Margin="10, 5, 10, 10" Click="btnTallenna_Click"></Button>
+                <Button x:Name="btnPoista" Content="Poista pelaaja" Margin="10, 5, 10, 10" Click="btnPoista_Click"></Button>
+                <Button x:Name="btnKirjoita" Content="Kirjoita pelaajat" Margin="10, 5, 10, 10" Click="btnKirjoita_Click"></Button>
+                <Button x:Name="btnLopeta" Content="Lopeta" Margin="10, 5, 10, 10" Click="btnLopeta_Click"></Button>
+            </StackPanel>
+            <ListBox x:Name="lbPelaajat" Width="197" Margin="5,10,10,46" SelectionChanged="lbSelection_Click"/>
         </StackPanel>
+        <StatusBar Margin="0, 30, 0, 0" Height="28" VerticalAlignment="Bottom">
+            <TextBlock x:Name="txtStatus" Text=""/>
+        </StatusBar>
     </StackPanel>
 </Window>
