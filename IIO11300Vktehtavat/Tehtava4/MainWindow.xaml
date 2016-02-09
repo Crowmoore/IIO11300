@@ -15,10 +15,10 @@
                 <TextBlock x:Name="tbSeura" Text="Seura" Margin="10, 10, 10, 10"></TextBlock>
             </StackPanel>
             <StackPanel Orientation="Vertical">
-                <TextBox x:Name="txtEtunimi" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
-                <TextBox x:Name="txtSukunimi" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
-                <TextBox x:Name="txtHinta" Text="" Width="100" Margin="10, 5, 10, 10"></TextBox>
-                <ComboBox x:Name="cbSeura" Width="100" Height="20"  Margin="10, 5, 10, 10"></ComboBox>
+                <TextBox x:Name="txtEtunimi" Text="" Width="100" Height="20" Margin="10, 10, 10, 10"></TextBox>
+                <TextBox x:Name="txtSukunimi" Text="" Width="100" Height="20" Margin="10, 5, 10, 10"></TextBox>
+                <TextBox x:Name="txtHinta" Text="" Width="100" Height="20" Margin="10, 5, 10, 10"></TextBox>
+                <ComboBox x:Name="cbSeura" Width="100" Height="20" Margin="10, 5, 10, 10"></ComboBox>
             </StackPanel>
             <StackPanel Orientation="Vertical">
                 <Button x:Name="btnUusi" Content="Lisää uusi" Margin="10, 5, 10, 10" Click="btnUusi_Click"></Button>
