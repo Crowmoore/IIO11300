@@ -1,0 +1,14 @@
+﻿<Window x:Class="Tehtava5.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava5"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="600" Width="800">
+    <Grid>
+        <Canvas Name="gameCanvas" Background="Black"></Canvas>
+        <TextBlock Name="tbScore" Text="Score: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="20"></TextBlock>
+        <TextBlock Name="tbFinalScore" Text="" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="20"></TextBlock>
+    </Grid>
+</Window>
