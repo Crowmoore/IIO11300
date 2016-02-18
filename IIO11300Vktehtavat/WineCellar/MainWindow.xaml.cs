@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
+using System.Xml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,14 +24,10 @@ namespace WineCellar
         public MainWindow()
         {
             InitializeComponent();
-            var xml = XDocument.Load("E:\\Koulu\\IIO11300\\IIO11300Vktehtavat\\WineCellar\\Wines.xml").Root;
-            datagrid.DataContext = xml;
         }
 
         private void btnShowAll_Click(object sender, RoutedEventArgs e)
         {
-            var xml = XDocument.Load("E:\\Koulu\\IIO11300\\IIO11300Vktehtavat\\WineCellar\\Wines.xml").Root;
-            datagrid.DataContext = xml;
         }
     }
 }

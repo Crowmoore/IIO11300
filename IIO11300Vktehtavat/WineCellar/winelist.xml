@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Wines xmlns="">
-	<Wine Name="Fume Blanc" Country="France" Review="10" />
-	<Wine Name="Gato Negro" Country="Chile" Review="8" />
-	<Wine Name="Cotes du Rhone" Country="France" Review="5" />
-	<Wine Name="Liebfraumilch" Country="Germany" Review="3" />
-	<Wine Name="Gato Negro Merlot" Country="Chile" Review="5" />
-	<Wine Name="Feteasca" Country="Romanien" Review="2" />
-</Wines>

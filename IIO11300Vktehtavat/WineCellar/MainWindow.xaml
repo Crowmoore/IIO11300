@@ -14,7 +14,7 @@
         </StackPanel>
     <Grid Margin="10">
         <Grid.Resources>
-            <XmlDataProvider x:Key="WineData" Source="Wines.xml" XPath="/Wines/Wine"></XmlDataProvider>
+            <XmlDataProvider x:Name="xdpWines" x:Key="WineData" Source="Wines.xml" XPath="/Wines/Wine"></XmlDataProvider>
         </Grid.Resources>
         <DataGrid DataContext="{StaticResource WineData}"
                   ItemsSource="{Binding XPath=/Wines/Wine}"
