@@ -9,6 +9,6 @@
     <StackPanel Orientation="Vertical">
         <TextBlock Name="tbTitle" Text="Snake" Width="150" Height="76" Margin="71,20" FontSize="50" FontWeight="Bold" Foreground="Green"></TextBlock>
         <Button Name="btnStart" Content="New Game" Width="150" Height="30" Margin="0, 20, 0, 0" Click="btnStart_Click"></Button>
-        <Button Name="btnQuit" Content="Quit" Width="150" Height="30" Click="btnQuit_Click"></Button>
+        <Button Name="btnQuit" Content="Quit" Width="150" Height="30" Margin="0, 20, 0, 0" Click="btnQuit_Click"></Button>
     </StackPanel>
 </Window>

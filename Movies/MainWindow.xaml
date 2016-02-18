@@ -1,0 +1,29 @@
+﻿<Window x:Class="Movies.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="Movie Gallery" Height="250" Width="525" FontFamily="Rockwell">
+    <Grid>
+    <StackPanel Orientation="Vertical">
+        <TextBlock Name="tbText" Text="Movie Gallery" HorizontalAlignment="Center" FontWeight="ExtraBold" FontSize="20"></TextBlock>
+            <Button Name="btnMovies1" Height="30" Width="200" Content="Gallery" FontWeight="ExtraBold" Margin="0, 30, 0, 0" BorderBrush="BlueViolet" BorderThickness="2" Click="btnMovies1_Click" FontFamily="Rockwell">
+                <Button.Effect>
+                    <DropShadowEffect Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+            <Button Name="btnEdit" Height="30" Width="200" Content="Gallery edit" FontWeight="ExtraBold" Margin="0, 10, 0, 0" BorderBrush="BlueViolet" BorderThickness="2" Click="btnEdit_Click" FontFamily="Rockwell">
+                <Button.Effect>
+                    <DropShadowEffect Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+            <Button Name="btnExit" Height="30" Width="200" Content="Exit" FontWeight="ExtraBold" Margin="0, 10, 0, 0" BorderBrush="BlueViolet" BorderThickness="2" Click="btnExit_Click" FontFamily="Rockwell">
+                <Button.Effect>
+                    <DropShadowEffect Opacity="0.75"/>
+                </Button.Effect>
+            </Button>
+    </StackPanel>
+    </Grid>
+</Window>

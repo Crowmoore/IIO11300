@@ -1,21 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1MediaPlayer", "..\IIO11300\IIO11300Vktehtavat\H1MediaPlayer\H1MediaPlayer.csproj", "{74469E55-5043-4233-99E5-31E9A99C4A6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1MediaPlayer", "IIO11300Vktehtavat\H1MediaPlayer\H1MediaPlayer.csproj", "{74469E55-5043-4233-99E5-31E9A99C4A6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3MittausData", "..\IIO11300\IIO11300Vktehtavat\H3MittausData\H3MittausData.csproj", "{8E18F019-4FFD-4202-9C73-0EA0DAE3521B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3MittausData", "IIO11300Vktehtavat\H3MittausData\H3MittausData.csproj", "{8E18F019-4FFD-4202-9C73-0EA0DAE3521B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "..\IIO11300\IIO11300Vktehtavat\Tehtava1\Tehtava1.csproj", "{BBFDB3F8-2232-4C51-A154-1DFFF2E75FE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "IIO11300Vktehtavat\Tehtava1\Tehtava1.csproj", "{BBFDB3F8-2232-4C51-A154-1DFFF2E75FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava2", "..\IIO11300\IIO11300Vktehtavat\Tehtava2\Tehtava2.csproj", "{088A1986-5099-46B3-90B9-DD688911B6BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava2", "IIO11300Vktehtavat\Tehtava2\Tehtava2.csproj", "{088A1986-5099-46B3-90B9-DD688911B6BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava3C", "..\IIO11300\IIO11300Vktehtavat\Tehtava3C\Tehtava3C.csproj", "{BBD72E48-F5A9-4D2E-A5D2-E5AC51873C0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava3C", "IIO11300Vktehtavat\Tehtava3C\Tehtava3C.csproj", "{BBD72E48-F5A9-4D2E-A5D2-E5AC51873C0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "..\IIO11300\IIO11300Vktehtavat\Tehtava4\Tehtava4.csproj", "{0C984988-3127-4163-A316-870500A21EA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "IIO11300Vktehtavat\Tehtava4\Tehtava4.csproj", "{0C984988-3127-4163-A316-870500A21EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava5", "..\IIO11300\IIO11300Vktehtavat\Tehtava5\Tehtava5.csproj", "{37C525DB-4499-46DE-908F-214A1FCDA7AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava5", "IIO11300Vktehtavat\Tehtava5\Tehtava5.csproj", "{37C525DB-4499-46DE-908F-214A1FCDA7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{5D90711B-E190-46FA-864C-7ED58952D65F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{37C525DB-4499-46DE-908F-214A1FCDA7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C525DB-4499-46DE-908F-214A1FCDA7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C525DB-4499-46DE-908F-214A1FCDA7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D90711B-E190-46FA-864C-7ED58952D65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D90711B-E190-46FA-864C-7ED58952D65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D90711B-E190-46FA-864C-7ED58952D65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D90711B-E190-46FA-864C-7ED58952D65F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
