@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Movies xmlns="">
+  <Movie Name="The Godfather" Country="USA" Director="Francis Ford Coppola" Checked="true"/>
+  <Movie Name="Seven Samurai" Country="Japan" Director="Akira Kurosawa" Checked="false" />
+  <Movie Name="Happy Together" Country="China" Director="Wong Kar Wai" Checked="false"/>
+  <Movie Name="Shoot The Piano Player" Country="France" Director="Francois Truffaut" Checked="false"/>
+  <Movie Name="Roshomon" Country="Japan" Director="Akira Kurosawa" Checked="true"/>
+  <Movie Name="Dead Man" Country="USA" Director="Jim Jarmusch" Checked="true"/>
+  <Movie Name="Children of Heaven" Country="Unknown" Director="Maj Country" Checked="true"/>
+  <Movie Name="Spectre" Country="England" Director="Sam Mendes" Checked="true"/>
+  <Movie Name="Anita" Country="Sweden" Director="Torgny Wickman" Checked="true"/>
+</Movies>

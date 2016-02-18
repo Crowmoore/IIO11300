@@ -8,7 +8,7 @@
         Title="Gallery" Height="300" Width="500">
     <Grid>
         <Grid.Resources>
-            <XmlDataProvider x:Key="MovieData" Source="S:\public_html\iio11300\IIO11300\Movies\Movies.xml" XPath="/Movies/Movie"></XmlDataProvider>
+            <XmlDataProvider x:Key="MovieData" Source="Movies.xml" XPath="/Movies/Movie"></XmlDataProvider>
         </Grid.Resources>
         <DataGrid DataContext="{StaticResource MovieData}" 
                   ItemsSource="{Binding XPath=/Movies/Movie}"
