@@ -6,25 +6,25 @@
         xmlns:local="clr-namespace:WineCellar"
         mc:Ignorable="d"
         Title="WineCellar" Height="350" Width="525">
+    <Window.Resources>
+        <XmlDataProvider x:Name="xdpWines" x:Key="WineData" Source="Wines.xml" XPath="/Wines" IsInitialLoadEnabled="True"></XmlDataProvider>
+    </Window.Resources>
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal" Margin="10">
             <Button Name="btnShowAll" Content="All wines" Click="btnShowAll_Click"></Button>
-            <TextBox Name="txtCountry" Width="100" Margin="10, 0, 10, 0"></TextBox>
-            <Button Name="btnSearch" Content="Search"></Button>
+            <ComboBox Name="cbCountry" Width="100" Margin="10, 0, 0, 0" ItemsSource="{Binding Source={StaticResource WineData},
+                XPath=Wine}" DisplayMemberPath="@Country"></ComboBox>
         </StackPanel>
-    <Grid Margin="10">
-        <Grid.Resources>
-            <XmlDataProvider x:Name="xdpWines" x:Key="WineData" Source="Wines.xml" XPath="/Wines/Wine"></XmlDataProvider>
-        </Grid.Resources>
-        <DataGrid DataContext="{StaticResource WineData}"
+        <Grid Margin="10">
+            <DataGrid DataContext="{StaticResource WineData}"
                   ItemsSource="{Binding XPath=/Wines/Wine}"
                   AutoGenerateColumns="False" Name="datagrid" AlternatingRowBackground="#FFC249FB" AreRowDetailsFrozen="True" FontFamily="Rockwell">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding XPath=@Name}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Country" Binding="{Binding XPath=@Country}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Review" Binding="{Binding XPath=@Review}"></DataGridTextColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-    </Grid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding XPath=@Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Country" Binding="{Binding XPath=@Country}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Review" Binding="{Binding XPath=@Review}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </StackPanel>
 </Window>

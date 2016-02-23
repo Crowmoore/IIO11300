@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace WineCellar
 {
@@ -21,6 +22,7 @@ namespace WineCellar
     /// </summary>
     public partial class MainWindow : Window
     {
+        XElement root = XElement.Load("E:\\Koulu\\IIO11300\\IIO11300Vktehtavat\\WineCellar\\Wines.xml");
         public MainWindow()
         {
             InitializeComponent();
