@@ -22,7 +22,6 @@ namespace WineCellar
     /// </summary>
     public partial class MainWindow : Window
     {
-        XElement root = XElement.Load("E:\\Koulu\\IIO11300\\IIO11300Vktehtavat\\WineCellar\\Wines.xml");
         public MainWindow()
         {
             InitializeComponent();
