@@ -1,0 +1,62 @@
+﻿<Window x:Class="H6DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:H6DataBinding"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:p="clr-namespace:H6DataBinding.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="800" FontSize="18">
+    <Window.Resources>
+        <sys:String x:Key="myApp">Application</sys:String>
+        <x:Array x:Key="myCourses" Type="sys:String">
+            <sys:String>IIO11300 Windows-ohjelmointi</sys:String>
+            <sys:String>IIO11100 Ohjelmistosuunnittelu</sys:String>
+            <sys:String>IIM50300 Palvelinohjelmointi</sys:String>
+            <sys:String>IIZP1234 Järjestelmäprojekti</sys:String>
+        </x:Array>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Background="LightGreen">
+                <TextBlock>DataBinding</TextBlock>
+                <TextBox x:Name="txtName" Width="150"></TextBox>
+                <TextBlock Text="{Binding ElementName=txtName, Path=Text}"></TextBlock>
+                <TextBlock Text="{Binding ElementName=txtName, Path=Text.Length}" FontSize="{Binding ElementName=txtName, Path=Text.Length}"></TextBlock>
+                <TextBlock>Bind to App.Config</TextBlock>
+                <TextBox Text="{Binding Source={x:Static p:Settings.Default}, Path=UserName}"></TextBox>
+                <TextBlock>Bind to static resource</TextBlock>
+                <TextBlock Text="{Binding Source={StaticResource myApp}}"></TextBlock>
+                <Button x:Name="btnGetSetting" Content="Get user" Click="btnGetSetting_Click"></Button>
+            </StackPanel>
+            <!-- different bindings to collections-->
+            <StackPanel Background="{Binding ElementName=cbColors, Path=SelectedItem.Content, Mode=OneWay}">
+                <TextBlock>Hardcoded combobox items</TextBlock>
+                <ComboBox x:Name="cbColors" SelectedIndex="0">
+                    <ComboBoxItem Content="Azure"></ComboBoxItem>
+                    <ComboBoxItem Content="Blue"></ComboBoxItem>
+                    <ComboBoxItem Content="Red"></ComboBoxItem>
+                    <ComboBoxItem Content="Cyan"></ComboBoxItem>
+                </ComboBox>
+                <TextBlock>Combobox items from resources</TextBlock>
+                <ComboBox x:Name="cbCourses" ItemsSource="{Binding Source={StaticResource myCourses}}"></ComboBox>
+                <TextBox Text="{Binding ElementName=cbCourses, Path=SelectedItem}"></TextBox>
+                <TextBlock>Combobox items from code behind</TextBlock>
+                <ComboBox x:Name="cbTeams"></ComboBox>
+            </StackPanel>
+            <!--Binding to object collection-->
+            <StackPanel x:Name="spLeague" Background="LightCyan">
+                <TextBlock Text="Bind to collection"></TextBlock>
+                <Button x:Name="btnBind" Content="Bind to collection" Click="btnBind_Click"></Button>
+                <TextBlock Text="{Binding}"></TextBlock>
+                <!--binding source can be determined by giving a property-->
+                <TextBox Text="{Binding Path=Name}"></TextBox>
+                <TextBox Text="{Binding Path=City}"></TextBox>
+                <Button x:Name="btnBack" Content="Back" Click="btnBack_Click"></Button>
+                <Button x:Name="btnForward" Content="Forward" Click="btnForward_Click"></Button>
+                <Button x:Name="btnAdd" Content="Add new" Click="btnAdd_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
