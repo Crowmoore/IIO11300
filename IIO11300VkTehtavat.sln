@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WineCellar", "IIO11300Vkteh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H6DataBinding", "H6DataBinding\H6DataBinding.csproj", "{1149F5FE-E597-4718-9286-210A1681239A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava7", "Tehtava7\Tehtava7.csproj", "{554902F1-4810-43B6-8F48-AE4AE307C618}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{1149F5FE-E597-4718-9286-210A1681239A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1149F5FE-E597-4718-9286-210A1681239A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1149F5FE-E597-4718-9286-210A1681239A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{554902F1-4810-43B6-8F48-AE4AE307C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554902F1-4810-43B6-8F48-AE4AE307C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554902F1-4810-43B6-8F48-AE4AE307C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554902F1-4810-43B6-8F48-AE4AE307C618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
