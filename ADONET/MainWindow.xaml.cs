@@ -25,9 +25,9 @@ namespace ADONET
         public MainWindow()
         {
             InitializeComponent();
-            GetData();
         }
-        private void GetData()
+
+        private void btnGetAttendance_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -37,8 +37,9 @@ namespace ADONET
                 {
                     connection.Open();
                     //create command and execute
-                    string query = "SELECT asioid, firstname, lastname, date FROM presences WHERE asioid = 'H3090'";
+                    string query = "SELECT asioid, firstname, lastname, date FROM presences WHERE asioid LIKE @id";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    adapter.SelectCommand.Parameters.AddWithValue("@id", "%" + txtID.Text + "%");
                     DataTable table = new DataTable();
                     adapter.Fill(table);
                     dgGrid.DataContext = table;
@@ -51,10 +52,16 @@ namespace ADONET
             {
                 MessageBox.Show(ex.Message);
             }
-            finally
-            {
-                
-            }
+        }
+
+        private void btnGetAttendanceDv_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGetAttendanceDs_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 

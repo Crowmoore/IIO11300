@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <DataGrid x:Name="dgGrid" ItemsSource="{Binding}"></DataGrid>
+        <StackPanel Orientation="Vertical">
+        <Button x:Name="btnGetAttendance" Content="Get Attendance (Data Table)" Click="btnGetAttendance_Click"></Button>
+        <TextBox x:Name="txtID" Text="[AsioID]"></TextBox>
+        <Button x:Name="btnGetAttendanceDv" Content="Get Attendance (Data View)" Click="btnGetAttendanceDv_Click"></Button>
+        <Button x:Name="btnGetAttendanceDs" Content="Get Attendance (Typed Dataset)" Click="btnGetAttendanceDs_Click"></Button>
+        <DataGrid x:Name="dgGrid" ItemsSource="{Binding}" ScrollViewer.CanContentScroll="True" Height="240"></DataGrid>
+        </StackPanel>
     </Grid>
 </Window>

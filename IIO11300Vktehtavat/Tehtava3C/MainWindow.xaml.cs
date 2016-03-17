@@ -43,7 +43,7 @@ namespace Tehtava3C
             }
             catch(Exception ex)
             {
-                tbNotification.Text = "Not a valid path";
+                tbNotification.Text = ex.Message;
             }
         }
 
@@ -61,7 +61,7 @@ namespace Tehtava3C
             }
             catch(Exception ex) 
             {
-                tbNotification.Text = "Cannot read from file";
+                tbNotification.Text = ex.Message;
             }
             //System.Diagnostics.Debug.WriteLine(sb.ToString());
             try {
@@ -70,7 +70,7 @@ namespace Tehtava3C
             }
             catch(Exception ex)
             {
-                tbNotification.Text = "Not a valid file path";
+                tbNotification.Text = ex.Message;
             }
         }
     }
