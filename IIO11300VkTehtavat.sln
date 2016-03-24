@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava8", "IIO11300Vktehta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H10ADOBlanco", "ADO\H10ADOBlanco.csproj", "{078B472F-E0BE-4705-A004-3F2A11A96896}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "IIO11300Vktehtavat\Library\Library.csproj", "{221EE0A5-DBF0-4535-81C6-2CAC959CD068}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{078B472F-E0BE-4705-A004-3F2A11A96896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{078B472F-E0BE-4705-A004-3F2A11A96896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{078B472F-E0BE-4705-A004-3F2A11A96896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
