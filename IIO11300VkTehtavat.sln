@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H10ADOBlanco", "ADO\H10ADOB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "IIO11300Vktehtavat\Library\Library.csproj", "{221EE0A5-DBF0-4535-81C6-2CAC959CD068}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H10EntityFramework", "IIO11300Vktehtavat\H10EntityFramework\H10EntityFramework.csproj", "{F04B9D08-4E6B-44D2-91F8-58569D2963C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{221EE0A5-DBF0-4535-81C6-2CAC959CD068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04B9D08-4E6B-44D2-91F8-58569D2963C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04B9D08-4E6B-44D2-91F8-58569D2963C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04B9D08-4E6B-44D2-91F8-58569D2963C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04B9D08-4E6B-44D2-91F8-58569D2963C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
